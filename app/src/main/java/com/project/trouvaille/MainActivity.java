@@ -2,6 +2,7 @@ package com.project.trouvaille;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         dummyLogin.setOnClickListener(view -> {
-
+            Intent homeIntent = new Intent(this, HomeActivity.class);
+            startActivity(homeIntent);
         });
 
     }
