@@ -30,7 +30,7 @@ public class SignupActivity extends AppCompatActivity {
 
 
         already_member.setOnClickListener(view -> {
-            Intent loginIntent = new Intent(this, SignupActivity.class);
+            Intent loginIntent = new Intent(this, MainActivity.class);
             startActivity(loginIntent);
             finish();
         });
